@@ -2,6 +2,10 @@
 
 # Allow use to re-edit a faild history substitution.
 shopt -s histreedit
+
+# Append to history file, don't overwrite
+shopt -s histappend
+
 # History expansions will be verified before execution.
 shopt -s histverify
 
