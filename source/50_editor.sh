@@ -9,7 +9,7 @@
 #  alias q="$EDITOR -w -z"
 #fi
 
-export VISUAL="$EDITOR"
+#export VISUAL="$EDITOR"
 
 alias q.='q .'
 
