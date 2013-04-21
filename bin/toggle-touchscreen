@@ -1,0 +1,14 @@
+
+
+
+DEVICE=10
+
+DEVICESTATE=`xinput list-props $DEVICE | grep 'Device Enabled' | cut -f 3`
+
+if [ $DEVICESTATE -eq 0 ]; then
+    echo Touchscreen is disabled, enabling...
+    xinput enable $DEVICE
+    else
+    echo Touchscreen is enabled, disabling...
+    xinput disable $DEVICE
+fi
